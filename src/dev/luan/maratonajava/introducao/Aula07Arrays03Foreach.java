@@ -17,5 +17,16 @@ public class Aula07Arrays03Foreach {
             System.out.println(num);
         }
 
+        int[] m = {2,3,4,5,6,7,8};
+
+        for (int i : m){
+            if (i == 6) {
+                System.out.println(i);
+                break;
+            } else {
+                System.out.println("Não encontrado!");
+            }
+        }
+
     }
 }
