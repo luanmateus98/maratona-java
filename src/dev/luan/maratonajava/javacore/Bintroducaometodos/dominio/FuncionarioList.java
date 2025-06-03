@@ -1,13 +1,11 @@
 package dev.luan.maratonajava.javacore.Bintroducaometodos.dominio;
 
-import dev.luan.maratonajava.javacore.Bintroducaometodos.test.FuncionarioTeste01EuDeNovo;
-
-public class FuncionarioEuDeNovo {
+public class FuncionarioList {
     private String nome;
     private int idade;
     private double salario;
 
-    public FuncionarioEuDeNovo(String nome, int idade, double salario) {
+    public FuncionarioList(String nome, int idade, double salario) {
         this.nome = nome;
         this.idade = idade;
         this.salario = salario;

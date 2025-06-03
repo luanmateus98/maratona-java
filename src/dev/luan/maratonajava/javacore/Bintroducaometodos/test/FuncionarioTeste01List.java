@@ -1,20 +1,20 @@
 package dev.luan.maratonajava.javacore.Bintroducaometodos.test;
 
-import dev.luan.maratonajava.javacore.Bintroducaometodos.dominio.FuncionarioEuDeNovo;
-import dev.luan.maratonajava.javacore.Bintroducaometodos.dominio.ImprimirDadosEuDeNovo;
+import dev.luan.maratonajava.javacore.Bintroducaometodos.dominio.FuncionarioList;
+import dev.luan.maratonajava.javacore.Bintroducaometodos.dominio.ImprimirDadosList;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class FuncionarioTeste01EuDeNovo {
+public class FuncionarioTeste01List {
     public static void main(String[] args) {
         /*FuncionarioEuDeNovo f1 = new FuncionarioEuDeNovo("Carlinda",85, 3500.00);
         FuncionarioEuDeNovo f2 = new FuncionarioEuDeNovo("Maria",72, 1700.00);
         FuncionarioEuDeNovo f3 = new FuncionarioEuDeNovo("Bianca",30, 4000.00);*/
 
         Scanner tecl = new Scanner(System.in);
-        List<FuncionarioEuDeNovo> funcionarioEuDeNovos = new ArrayList<>();
+        List<FuncionarioList> funcionarioLists = new ArrayList<>();
 
         String resp;
         do {
@@ -31,7 +31,7 @@ public class FuncionarioTeste01EuDeNovo {
             System.out.print("Salário: ");
             double salario = tecl.nextDouble();
 
-            funcionarioEuDeNovos.add(new FuncionarioEuDeNovo(nome, idade, salario));
+            funcionarioLists.add(new FuncionarioList(nome, idade, salario));
 
             System.out.print("Deseja cadastrar outro funcionário ? ");
             resp = tecl.next().toLowerCase();
@@ -43,8 +43,8 @@ public class FuncionarioTeste01EuDeNovo {
             funcionarioEuDeNovos.add(new FuncionarioEuDeNovo("Enmily", 24, 30000.00));
             funcionarioEuDeNovos.add(new FuncionarioEuDeNovo("Bianca", 30, 60000.00));
         }*/
-        ImprimirDadosEuDeNovo imprimir = new ImprimirDadosEuDeNovo();
-        imprimir.imprimirDados(funcionarioEuDeNovos);
-        imprimir.imprimirMedia(funcionarioEuDeNovos);
+        ImprimirDadosList imprimir = new ImprimirDadosList();
+        imprimir.imprimirDados(funcionarioLists);
+        imprimir.imprimirMedia(funcionarioLists);
     }
 }
