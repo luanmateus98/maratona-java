@@ -24,6 +24,12 @@ public class FuncionarioTeste01List {
 
             System.out.print("Nome: ");
             String nome = tecl.next();
+            if (nome.isEmpty() || nome.equals(" ")){
+                System.out.println("Você precisa digitar um nome.");
+                do {
+                    nome = tecl.next();
+                } while (!nome.isEmpty());
+            }
 
             System.out.print("Idade: ");
             int idade = tecl.nextInt();
